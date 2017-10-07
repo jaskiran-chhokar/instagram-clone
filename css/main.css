@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale= 1.0" />
+	<title>Instagram</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css" /> 
+</head>
+<body>
+	<header>
+		<a href="home.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+		<a href="search.html"><i class="fa fa-search" aria-hidden="true"></i></a>
+		<a href="likes.html"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+		<a href="profile.html"><i class="fa fa-user-o" aria-hidden="true"></i></a>
+	</header>
 
+	<section class="container">
+		<div class="card">
+		<div class="card-header">
+		<div class="profile-img">
+			<img class="profile-img" src="img/profile-pic.jpg"/>
+		</div>
+		<div class="profile-info">
+			<div class="name">missy_elliot</div>
+			<div class="location">New York, New York</div>
+		</div>
+		<div class="time">
+			1hr
+		</div>
+		</div>
+		<div class="content">
+			<img src="img/chestnut.jpg" class="content" />
+		</div>
+		<div class="card-footer">
+			<div class="footer-content">
+				<span class="likes">241 likes</span>
+					<p><span>missy_elliot</span> Currently starring in my own reality show titled, A Modern Cinderella; One Girl’s Search for Love and Shoe.</p>
+					<p><span>gary_9198</span> Good Luck!! :D </p>	
+					<p><span>samantha_george</span> Beautiful Picture ♥ </p>
+					<p><span>charlie.david</span> Heeyyy </p>
+				<form class="form">
+					<span class="heart"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+					<span class="add-comment"><input type="text" placeholder="Add a comment..." /></span>
+					<span class="options"><i class="fa fa-ellipsis-h"></i></span>
+				</form>
+			</div>
+		</div>
+	</div>
+	</section>
+</body>
+</html>
