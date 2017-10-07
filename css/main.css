@@ -1,53 +1,147 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale= 1.0" />
-	<title>Instagram</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<link rel="stylesheet" href="css/main.css" /> 
-</head>
-<body>
-	<header>
-		<a href="home.html"><i class="fa fa-home" aria-hidden="true"></i></a>
-		<a href="search.html"><i class="fa fa-search" aria-hidden="true"></i></a>
-		<a href="likes.html"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-		<a href="profile.html"><i class="fa fa-user-o" aria-hidden="true"></i></a>
-	</header>
+@import 'reset'; 
 
-	<section class="container">
-		<div class="card">
-		<div class="card-header">
-		<div class="profile-img">
-			<img class="profile-img" src="img/profile-pic.jpg"/>
-		</div>
-		<div class="profile-info">
-			<div class="name">missy_elliot</div>
-			<div class="location">New York, New York</div>
-		</div>
-		<div class="time">
-			1hr
-		</div>
-		</div>
-		<div class="content">
-			<img src="img/chestnut.jpg" class="content" />
-		</div>
-		<div class="card-footer">
-			<div class="footer-content">
-				<span class="likes">241 likes</span>
-					<p><span>missy_elliot</span> Currently starring in my own reality show titled, A Modern Cinderella; One Girl’s Search for Love and Shoe.</p>
-					<p><span>gary_9198</span> Good Luck!! :D </p>	
-					<p><span>samantha_george</span> Beautiful Picture ♥ </p>
-					<p><span>charlie.david</span> Heeyyy </p>
-				<form class="form">
-					<span class="heart"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
-					<span class="add-comment"><input type="text" placeholder="Add a comment..." /></span>
-					<span class="options"><i class="fa fa-ellipsis-h"></i></span>
-				</form>
-			</div>
-		</div>
-	</div>
-	</section>
-</body>
-</html>
+body {
+	background: #fafafa;
+}
+
+header {
+	background: #fafafa;
+	border-bottom: 1px solid #ccc;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index:20;
+}
+
+a {
+	box-sizing: border-box;
+	width: 25%;
+	display: inline-block;
+	margin-left: -3px;
+	text-align: center;
+	padding: 12px;
+}
+
+.fa  {
+	color: #111;
+	font-size: 25px;
+}
+
+.fa-heart-o:hover {
+	color: red;
+}
+
+.container {
+	background: #fafafa;
+	padding-top: 50px;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 58px;
+	bottom: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.card {
+	background: #fff;
+	margin: 0 auto;
+	width: 500px;
+	height: 1000px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+.card-header {
+	padding: 15px;
+}
+
+.profile-img {
+	display: inline-block;
+	height: 45px;
+	width: 45px;
+	border-radius: 50%;
+	position: relative;
+	top: 5px;
+	margin-right: 5px;
+}
+
+
+.profile-info {
+	display: inline-block;
+}
+
+.name {
+	font-size: 14px;
+	color: #111;
+	font-weight: 700;
+}
+
+.location {
+	font-size: 12px;
+	color: #111;
+}
+
+.time {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	float: right;
+	display: inline-block;
+	position: relative;
+	top: 10px;
+	right: 5px;
+	color: grey;
+	font-weight: 700;
+}
+
+.content {
+	width: 100%;
+	height: 670px;
+}
+
+.likes {
+	font-weight: 700;
+}
+
+.card-footer {
+	box-sizing: border-box;
+	overflow: auto;
+}
+
+.footer-content {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	padding: 10px 15px 0 15px;
+}
+
+span {
+	font-weight: 600;
+}
+
+.fa {
+	font-size: 24px;
+}
+.fa-heart-o {
+	display: inline-block;
+	width: 10%;
+}
+
+.add-comment {
+	display: inline-block;
+	width: 60%;
+}
+
+input {
+	font-family: 'Open Sans', sans-serif;
+	display: inline-block;
+	width: 100%;
+	padding: 5px;
+	font-size: 14px;
+}
+
+.fa-ellipsis-h {
+	display: inline-block;
+	width: 15%;
+	color: grey;
+	padding: 0 0 0 18px;
+}
