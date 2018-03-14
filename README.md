@@ -1,3 +1,4 @@
-# Instagram Clone
+## Instagram Clone
 
-  * A clone of the Instagram Homepage (UI Design) 
+This project was created as a pen, and can be found at [CodePen.io](https://codepen.io/jaskiranchhokar/pen/WZMKRa)
+  
